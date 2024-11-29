@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      HTTP_PROXY: http://wwwproxy.osakac.ac.jp:8080
+      HTTPS_PROXY: http://wwwproxy.osakac.ac.jp:8080
+    stdin_open: true
+    tty: true
