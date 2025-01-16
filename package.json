@@ -1,6 +1,6 @@
 {
   "name": "picoc-js",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "a tiny c interpreter compiled to wasm",
   "main": "dist/bundle.js",
   "unpkg": "dist/bundle.umd.js",
@@ -19,7 +19,9 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.1.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
-    "rollup": "^2.39.1"
+    "node-polyfill-webpack-plugin": "^4.1.0",
+    "rollup": "^2.39.1",
+    "rollup-plugin-polyfill-node": "^0.13.0"
   },
   "keywords": [
     "c",
@@ -31,6 +33,5 @@
     "wasm",
     "browser",
     "node"
-  ],
-  "dependencies": {}
+  ]
 }
